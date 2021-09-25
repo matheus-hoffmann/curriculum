@@ -1,0 +1,281 @@
+%-------------------------
+% Resume in Latex
+% Author : Matheus Hoffmann
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{ragged2e}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    {\Huge \scshape Matheus Hoffmann Brito} \\ \vspace{1pt}
+    Recreio dos Bandeirantes, Rio de Janeiro, Brazil \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +55 (21) 99718-7508 ~ \href{mailto:x@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{mmatheushb@hotmail.com}} ~ 
+    \href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{/matheus-hoffmann}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/matheus-hoffmann}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Pontifical Catholic University of Rio de Janeiro (PUC-Rio)}{Feb. 2020 -- Dec 2021}
+{Master of Science in Mechanical Engineering}{Rio de Janeiro, RJ}
+\resumeSubheading
+{Pontifical Catholic University of Rio de Janeiro (PUC-Rio)}{Feb. 2014 -- Dec 2018}
+{Bachelor of Science in Mechanical Engineering}{Rio de Janeiro, RJ}
+\resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\justifying
+\small{\item{
+\textbf{Programming Languages}{: Python, C++, C, MATLAB/Simulink, Bash, SQL.} \\
+\textbf{Frameworks/Libraries}{: Numpy, Pandas, Scikit-learn, TensorFlow, Matplotlib, Seaborn, Plotly.} \\
+\textbf{Developer Tools}{: PyCharm, Visual Studio Code, Microsoft Visual Studio, Git, GitHub, GitLab.} \\
+\textbf{Platforms}{: Windows, Linux.}\\
+\textbf{Others skills}{: Software Documentation, Object-oriented Programming, Event-driven Programming, Functional Programming, Multilingual communication (Portuguese, English and Spanish).} \\
+\textbf{Certifications}{: Machine Learning Analyst (IGTI-Bootcamp, 2021), Google Analytics for beginners (Google Analytics, 2021), Data Cleaning (Kaggle, 2021), Data Visualization (Kaggle, 2021), Intro to SQL (Kaggle, 2021), Certificate DELE (Diplomas de Español como Lengua Extranjera) level B2, Microsoft Excel 2010 (PUC-Rio, 2014).}
+}}
+\end{itemize}
+\vspace{-16pt}
+
+
+%-----------PROFESSIONAL EXPERIENCE-----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+\justifying
+
+\resumeSubheading
+{Tecgraf}{Mar. 2019 -- Present}
+{Technical Specialist}{Rio de Janeiro, RJ}
+\resumeItemListStart
+\resumeItem{Development of a predictive model using machine learning techniques from scarce data.}
+\resumeItem{Creation of a python library for data analysis with a web interface, using Git as a versioning tool.}
+\resumeItem{Development of web applications with Plotly Dash for data visualization and analysis.}
+\resumeItem{Automated pre and post-processing data routines using Python and Shell scripts to extinguish errors and increase the data analysis quality.}
+\resumeItem{Development of an interface that merges Object-Oriented and Event-Driven programming using C++.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Yield Control Soluções em Energia S/A, }{Mar. 2018 -- Dec. 2018}
+{Mechanical Engineer Intern}{Rio de Janeiro, RJ}
+\resumeItemListStart
+\resumeItem{Customization and optimization of the HVAC system, creating an operational profile that reduces costs and increases the system’s performance.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------OTHER EXPERIENCE-----------
+\section{Other Relevant Experience}
+\resumeSubHeadingListStart
+\justifying
+
+\resumeSubheading
+{Guidance on undergraduate thesis}{Mar. 2019 -- Jun. 2021}
+{Co-advisor}{Rio de Janeiro, RJ}
+\resumeItemListStart
+\resumeItem{Co-advised four final project studies on off-road vehicle’s brake, powertrain and suspension components, using Ansys topology optimization toolkit.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Baja Rio Competition}{Nov. 2018 -- Aug. 2021}
+{Committee}{Rio de Janeiro, RJ}
+\resumeItemListStart
+\resumeItem{Creation of the mentoring project, whose objective was to guarantee the evolution of Baja teams in Rio de Janeiro.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+\justifying
+
+\resumeProjectHeading
+{\textbf{Skl Regressor Test} $|$ \emph{Python, Scikit-learn}}{Jul. 2021}
+\resumeItemListStart
+\resumeItem{Developed a Python library able to compare more than 30 regression models available in Scikit-learn at once. It is possible to evaluate the influence of successive resampling and optimize the hyperparameters through K-fold cross-validation holdout.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Overhead Crane Control} $|$ \emph{MATLAB, Simulink}}{Jun. 2020}
+\resumeItemListStart
+\resumeItem{Developed a mathematical model to simulate an overhead crane. From this simulation, designed and compared a lead-lag compensator and an integral controller for this problem.}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{Model of a shock absorber using system identification} $|$ \emph{MATLAB, RBF Neural Networks}}{Dec. 2020}
+\resumeItemListStart
+\resumeItem{Designed and performed tests on a nonlinear shock absorber to generate data for a system identification algorithm. The model was able to predict the forces of the shock absorber with an accuracy of 93\%.}
+\resumeItemListEnd 
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\pagebreak
+\begin{sloppypar}
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+%\resumeSubHeadingListStart
+\begin{multicols}{4}
+    \begin{itemize}[itemsep=-5pt, parsep=3pt]
+        \item\small Machine Learning
+        \item Signal Processing
+        \item System Identification
+        \item Design of Experiments
+        \item Control of Mechanical Systems
+        \item Scientific Computing and Differential Equations
+        \item Optimization: Algorithms and Applications
+    \end{itemize}
+\end{multicols}
+\vspace*{2.0\multicolsep}
+%\resumeSubHeadingListEnd
+
+
+%-----------PUBLICATIONS---------------
+\section{Publications}
+\justifying
+\resumeItemListStart
+\resumeItem{KASSAR, B. B. M.; MARQUES, R. G. C.; JUNIOR, H. B. B.; BRITO, M. H., Improving operational equipment reliability with CFD analysis: case study of dry gas seal, Rio Oil and Gas Expo and Conference, (Rio de Janeiro, Brazil), 2020.}
+\resumeItemListEnd
+
+
+%-----------INVOLVEMENT---------------
+\section{Academic Experience}
+\resumeSubHeadingListStart
+\justifying
+
+\resumeSubheading{Baja SAE Racing Team}{Mar. 2015 -- Sep. 2018}{Project Manager}{PUC-Rio}
+\resumeItemListStart
+\resumeItem{Successfully led teams of 20 people during two complete cycles of building new off-road vehicles.}
+\resumeItem{Responsible for the structural analysis and design the 2018-2020 vehicle.}
+\resumeItem{The team improved from 49th to 14th place, the best position in a National Competition.}
+\resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+
+\end{document}
